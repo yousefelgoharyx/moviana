@@ -1,0 +1,46 @@
+.account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: #1b1b1b;
+    // padding-right: 10px;
+    border-radius: 50px;
+    z-index: 9000;
+    &__img {
+        width: 45px;
+        height: 45px;
+        padding: 6px;
+        cursor: pointer;
+        // padding-right: 0;
+        // margin-right: 4px;
+        img {
+            border-radius: 50%;
+        }
+    }
+    // &-name {
+    //     font-size: 1.4rem;
+    //     margin-right: 8px;
+    //     max-width: 50px;
+    //     overflow: hidden;
+    // }
+    &__settings {
+        font-size: 0;
+        opacity: 0.5;
+        margin-right: 12px;
+        cursor: pointer;
+        &:hover {
+            opacity: 1;
+        }
+        svg {
+            width: 20px;
+            height: 20px;
+        }
+        @media (min-width: 770px) {
+            display: none;
+        }
+    }
+}

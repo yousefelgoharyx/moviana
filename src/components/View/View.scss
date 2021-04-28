@@ -1,0 +1,14 @@
+.view {
+    border-radius: 12px;
+    &:not(:last-child) {
+        margin-bottom: 3.2rem;
+    }
+    &__heading {
+        font-size: 1.6rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 1.2rem;
+        display: flex;
+        align-items: center;
+    }
+}

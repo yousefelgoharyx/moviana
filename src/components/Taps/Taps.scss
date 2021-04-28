@@ -1,0 +1,20 @@
+.taps {
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    flex-wrap: wrap;
+    .tap-item {
+        padding-right: 16px;
+        padding-bottom: 8px;
+        opacity: 0.5;
+        cursor: pointer;
+        transition: opacity 0.1s ease;
+        &.active {
+            font-size: 16px;
+            opacity: 1;
+        }
+        &:hover {
+            opacity: 1;
+        }
+    }
+}

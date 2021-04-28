@@ -1,0 +1,35 @@
+.slider {
+    overflow: hidden;
+    position: relative;
+    user-select: none;
+    &-wrapper {
+        display: grid;
+        grid-auto-flow: column;
+        gap: 16px;
+    }
+
+    &-next-btn,
+    &-prev-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border: none;
+        width: 30px;
+        outline: none;
+        cursor: pointer;
+        height: 30px;
+        border-radius: 8px;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        transform: translate(0, -50%);
+        top: 50%;
+    }
+    &-next-btn {
+        right: 8px;
+    }
+    &-prev-btn {
+        left: 8px;
+    }
+}

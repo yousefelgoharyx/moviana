@@ -1,0 +1,57 @@
+.card {
+    width: 184px;
+    overflow: hidden;
+    position: relative;
+    height: 260px;
+    border-radius: 8px;
+    &__img {
+        width: 100%;
+        height: 100%;
+        font-size: 0;
+
+        overflow: hidden;
+        background-color: var(--dark2);
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__rate {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        font-weight: bold;
+        margin-bottom: 0px;
+        letter-spacing: 2px;
+        svg {
+            width: 14px;
+            height: 14px;
+            margin-right: 2px;
+            fill: #ffdc64;
+            color: #ffdc64;
+            position: relative;
+            top: -1px;
+        }
+    }
+    &__title {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        background-image: linear-gradient(180deg, #000000b5, transparent);
+        padding: 1.6rem;
+        flex-direction: column;
+
+        a {
+            font-weight: bold;
+            text-transform: uppercase;
+            opacity: 1;
+            font-size: 1.4rem;
+        }
+    }
+}

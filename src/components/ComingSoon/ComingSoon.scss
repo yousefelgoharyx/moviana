@@ -1,0 +1,15 @@
+.comingsoon {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h1 {
+        font-size: 6vw;
+        text-transform: uppercase;
+    }
+    h3 {
+        font-size: 4vw;
+        text-transform: uppercase;
+    }
+}

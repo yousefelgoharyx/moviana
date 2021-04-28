@@ -1,0 +1,69 @@
+.header {
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-position: 100%;
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 32px;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    &__title {
+        font-size: 64px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    &__mm {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        margin-bottom: 16px;
+        svg {
+            width: 16px;
+            height: 16px;
+            position: relative;
+            top: 2px;
+            fill: #fff;
+            margin-right: 2px;
+        }
+    }
+    &__match {
+        color: var(--green);
+        margin-right: 16px;
+    }
+    &__text {
+        font-size: 16px;
+        width: 50%;
+        margin-bottom: 16px;
+    }
+    &__badges {
+        display: flex;
+        margin-bottom: 8px;
+        & > *:not(:last-child) {
+            margin-right: 4px;
+        }
+    }
+    & button:first-child {
+        margin-right: 16px;
+    }
+}
+
+@media (min-width: 0) and(max-width:769px) {
+    .header {
+        &__text {
+            font-size: 16px;
+            width: 90%;
+            margin-bottom: 16px;
+        }
+    }
+}
